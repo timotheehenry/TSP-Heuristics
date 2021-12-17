@@ -6,12 +6,22 @@ A script performs a benchmark of our use of the k_opt against LKH, the best perf
 
 Right now our heuristic is slow because of its simplistic approach, but the results show that, after a while, we come closer to LKH achieved distance.
 
+The heuristic implemented at the moment:
+- start with a random path, or nearest neighbour path
+- loop and operate a k-optimization of the path, at k indexes in the path. The indexes are either (80% of the time) random, or (20% of the time) at chosen places where the distances from previous city are the highest. This last bit needs a lot of improvement. I am following ideas from the original LKH papers when time I have time available.
+
+LKH papers used as inspiration:
+- 1973, S. Lin & B. W. Kernighan, “An Effective Heuristic Algorithm for the Traveling-Salesman Problem”
+- 1998, K. Helsgaun, "An Effective Implementation of the Lin-Kernighan Traveling Salesman Heuristic."
+
+
 In the tables below:
 - nn = nearest neigbour achieved distance (lower is better)
 - us = achieved distance by our implementation
 - lkh = achieved distance by the LKH package
 - us_duration = time it took our implementation, in seconds
 - lkh_duration = time it took the LKH package, in seconds
+- gap: percentage gap between our distance and LKH distance
 
 
 ```
