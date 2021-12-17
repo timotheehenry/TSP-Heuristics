@@ -13,6 +13,7 @@ N = size(distmat)[1]
 
 # starting from a random path
 # ---------------------------
+Random.seed!(3)
 path = sample(1:N, N, replace=false)
 
 # running k-opt with k=5
