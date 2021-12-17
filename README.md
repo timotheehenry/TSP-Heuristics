@@ -14,6 +14,7 @@ In the tables below:
 - lkh_duration = time it took the LKH package, in seconds
 
 
+```
 #####################
 6_opt, nb_runs=5000
 #####################
@@ -40,6 +41,7 @@ In the tables below:
    5 │     2        100    776    730    683        24.05          0.21     0.07
    6 │     3        100    763    693    662        19.74          0.07     0.05
 
+```
 
 
 
