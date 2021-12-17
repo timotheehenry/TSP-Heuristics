@@ -1,5 +1,5 @@
 # ==========================================================================================
-# checking with DANTZIG42 is a set of 42 cities, from TSPLIB. The minimal tour has length 699.
+# Example with DANTZIG42 which is a set of 42 cities, from TSPLIB. The minimal tour has length 699.
 # https://people.sc.fsu.edu/~jburkardt/datasets/tsp/tsp.html
 # ==========================================================================================
 using CSV, DelimitedFiles
