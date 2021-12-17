@@ -29,7 +29,6 @@ In the tables below:
 6_opt, nb_runs=5000
 #####################
  Row │ seed   NB_CITIES  nn     us     lkh    us_duration  lkh_duration  gap     
-     │ Int64  Int64      Int64  Int64  Int64  Float64      Float64       Float64 
 ─────┼───────────────────────────────────────────────────────────────────────────
    1 │     1         50    470    433    425       113.46          0.04     0.02
    2 │     2         50    466    439    428       109.08          0.03     0.03
@@ -42,7 +41,6 @@ In the tables below:
 5_opt, nb_runs=5000
 #####################
  Row │ seed   NB_CITIES  nn     us     lkh    us_duration  lkh_duration  gap     
-     │ Int64  Int64      Int64  Int64  Int64  Float64      Float64       Float64 
 ─────┼───────────────────────────────────────────────────────────────────────────
    1 │     1         50    470    437    425        14.74          0.05     0.03
    2 │     2         50    466    445    428        15.28          0.03     0.04
