@@ -23,8 +23,26 @@ In the tables below:
 - lkh_duration = time it took the LKH package, in seconds
 - gap: percentage gap between our distance and LKH distance
 
+While our implementation is very slow, due to the heuristic, the 7-opt gets close (gap under 4%) of the distance found by LKH. 
+
+NEXT STEPS:
+- improve the heuristic by swithcing the value of k
+- improve the heuristic by better selecting specific cuts (as per the paper mentioned above)
+
 
 ```
+#####################
+7_opt, nb_runs=5000
+#####################
+ Row │ seed   NB_CITIES  nn     us     lkh    us_duration  lkh_duration  gap     
+─────┼───────────────────────────────────────────────────────────────────────────
+   1 │     1         50    470    430    425      1618.95          0.04     0.01
+   2 │     2         50    466    428    428      1500.96          0.03     0.0
+   3 │     3         50    507    456    455      2193.15          0.02     0.0
+   4 │     1        100    754    705    683      3907.54          0.18     0.03
+   5 │     2        100    776    698    683      3963.24          0.21     0.02
+   6 │     3        100    763    688    662      5059.7           0.21     0.04
+
 #####################
 6_opt, nb_runs=5000
 #####################
