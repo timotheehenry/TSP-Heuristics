@@ -23,7 +23,7 @@ In the tables below:
 - lkh_duration = time it took the LKH package, in seconds
 - gap: percentage gap between our distance and LKH distance
 
-While our implementation is very slow, due to the heuristic, the 7-opt gets close (gap under 4%) of the distance found by LKH. 
+While our implementation is very slow, due to the heuristic, the 7-opt gets close (gap under 1% for 50 cities, about 3% for 100 cities) of the distance found by LKH. 
 
 NEXT STEPS:
 - improve the heuristic by swithcing the value of k
